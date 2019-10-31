@@ -28,7 +28,7 @@ by using shims underneath the landing gear as shown in the picture below.
 
 Lastly it is possible if you haven’t adjusted your tail rotor linkage or your throttle
 linkage in the case of a gas engine that you could have binding occur while doing the 
-swashplate set up. This is due to the H_SV_MAN feature provides manual servo settings 
+swashplate set up. This is due to the :ref:H_SV_MAN <H_SV_MAN> feature provides manual servo settings 
 that drive the servos to the min and max values which includes the tail rotor servo 
 and the throttle servo due to throttle curve settings.
 
