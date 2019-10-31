@@ -1,8 +1,8 @@
 .. _traditional-helicopter-swashplate-setup:
 
-===============================
+=========================================
 Traditional Helicopter – Swashplate Setup
-===============================
+=========================================
 
 The swashplate is designed to take the servo inputs that are based on the pilot’s 
 pitch, roll, and collective commands and translate them to individual blade pitch 
@@ -33,9 +33,9 @@ that drive the servos to the min and max values which includes the tail rotor se
 and the throttle servo due to throttle curve settings.
 
 Select Swashplate Type
-================
+======================
 
-Below are the swashplate type selections using the H_SWASH_TYPE parameter.  The diagrams
+Below are the swashplate type selections using the :ref:H_SW_TYPE (AP_MotorsHeli_Single)<H_SW_TYPE (AP_MotorsHeli_Single)> parameter.  The diagrams
 shown list the servo 1, servo 2 or servo 3 for the three servo swashplate types.  These
 correspond to the respective servo outputs in the parameters list and are the default 
 servos for these swashplate types.  For single heli, the servo function assigned to servo 1
@@ -48,8 +48,8 @@ motor 39. The fourth servo on swashplate 2 defaults to servo 8 and is assigned m
 In the case of dual heli frame with four servo swashplates, the RSCHeli function (motor 31) will 
 need to be moved to one of the aux servo outputs (9-16).
 
-- Generic H3-120
-- H1
+- H3 Generic - Allows servo positions and phase angle to be set by user.  Assumes all swashplate ball links are the same distance from the main shaft.
+- H1 non-CCPM - Servo1 is aileron, Servo 2 is elevator and Servo 3 is collective
 - H3-140
 .. image:: ../images/TradHeli_Swashplate_H3-140.png
     :target: ../_images/TradHeli_Swashplate_H3-140.png
@@ -65,17 +65,17 @@ need to be moved to one of the aux servo outputs (9-16).
  
 Other swashplates types that can be supported
 
-- H3R-140 - Use H3-140. May require H_COL_CTRL_DIR to be reversed.
+- H3R-140 - Use H3-140. May require :ref:H_COL_CTRL_DIR (AP_MotorsHeli_Single)<H_COL_CTRL_DIR (AP_MotorsHeli_Single)> to be reversed.
 .. image:: ../images/TradHeli_Swashplate_H3R-140.png
     :target: ../_images/TradHeli_Swashplate_H3R-140.png
-- H3R-120 - Use H3-120. May require H_COL_CTRL_DIR to be reversed.
+- H3R-120 - Use H3-120. May require :ref:H_COL_CTRL_DIR (AP_MotorsHeli_Single)<H_COL_CTRL_DIR (AP_MotorsHeli_Single)> to be reversed.
 .. image:: ../images/TradHeli_Swashplate_H3R-120.png
     :target: ../_images/TradHeli_Swashplate_H3R-120.png
 - H3-90 - Use H4-90.  Don't use one of the servo outputs.
  
 
 Check Proper Swashplate Movement
-================
+================================
   
 Use your transmitter to check for proper swashplate response to cyclic and collective inputs.  
 Push forward on the elevator stick and swashplate tilts forward; pull back on the elevator 
@@ -83,11 +83,11 @@ stick and swashplate tilts aft.  Push right on the aileron stick and the swashpl
 right; Push left on the aileron stick and the swashplate tilts left.  Push up on the throttle 
 stick (collective) and the swashplate will rise; pull down on the throttle stick (collective) 
 and the swashplate will lower. Set the SERVO1_REVERSED, SERVO2_REVERSED, SERVO3_REVERSED, and 
-H_COL_CTRL_DIR parameters so that your swashplate responds correctly (as described above) to 
+:ref:H_COL_CTRL_DIR (AP_MotorsHeli_Single)<H_COL_CTRL_DIR (AP_MotorsHeli_Single)> parameters so that your swashplate responds correctly (as described above) to 
 your collective and cyclic inputs.
 
 Leveling your swashplate
-================
+========================
 
 The swashplate can be leveled using either a tool specially designed to keep the swashplate 
 perpendicular to the shaft or, a less expensive way, using a magnet and nail (shown below). 
@@ -101,7 +101,7 @@ methods below so the nail touches the top of each swashplate arm.
 **Leveling swashplate without using linear servo**
 
 If you aren’t using the linearize servo feature, then you will use the servo trim parameters 
-to level your swashplate. Set the H_SV_MAN parameter to 1.  Adjust the transmitter throttle 
+to level your swashplate. Set the :ref:H_SV_MAN (AP_MotorsHeli_Single)<H_SV_MAN (AP_MotorsHeli_Single)> parameter to 1.  Adjust the transmitter throttle 
 stick (collective) until the servos are nearly perpendicular to the shaft.  Adjust SERVO1_TRIM, 
 SERVO2_TRIM, and SERVO3_TRIM until the swashplate is level.
 
@@ -119,34 +119,34 @@ can adjust your pitch links to make the swashplate level.
     :target: ../_images/TradHeli_linear_servo_setup.png
 
 Setting H_COL_MIN, H_COL_MID and H_COL_MAX
-================
+==========================================
 
-Use the servo manual setting (H_SV_MAN) to move the swashplate between min, mid and max positions.
+Use the servo manual setting (:ref:H_SV_MAN (AP_MotorsHeli_Single)<H_SV_MAN (AP_MotorsHeli_Single)>) to move the swashplate between min, mid and max positions.
 At each position use the blade pitch gauge to set the desired blade pitch.  A typical collective 
 blade pitch range is -2° to +10°.  
-Set H_SV_MAN to 2 to have swashplate move to maximum position.  Adjust H_COL_MAX until blade pitch 
+Set :ref:H_SV_MAN (AP_MotorsHeli_Single)<H_SV_MAN (AP_MotorsHeli_Single)> to 2 to have swashplate move to maximum position.  Adjust :ref:H_COL_MAX (AP_MotorsHeli_Single)<H_COL_MAX (AP_MotorsHeli_Single)> until blade pitch 
 angle mesures the desired maximum collective blade pitch.  
-Set H_SV_MAN to 4 to have swashplate move to minimum position.  Adjust H_COL_MIN until blade pitch
+Set :ref:H_SV_MAN (AP_MotorsHeli_Single)<H_SV_MAN (AP_MotorsHeli_Single)> to 4 to have swashplate move to minimum position.  Adjust :ref:H_COL_MIN (AP_MotorsHeli_Single)<H_COL_MIM (AP_MotorsHeli_Single)> until blade pitch
 angle measures the desired minimum collective blade pitch.
 
-The H_COL_MID parameter is used for the collective to yaw mixing.  It is also used as the lower 
+The :ref:H_COL_MID (AP_MotorsHeli_Single)<H_COL_MID (AP_MotorsHeli_Single)> parameter is used for the collective to yaw mixing.  It is also used as the lower 
 collective pitch limit for modes that use altitude hold in the vertical axis.  This keeps the autopilot
-from driving collective to low resulting in ground resonance. The H_COL_MID parameter is set to zero 
+from driving collective to low resulting in ground resonance. The :ref:H_COL_MID (AP_MotorsHeli_Single)<H_COL_MID (AP_MotorsHeli_Single)> parameter is set to zero 
 degree collecitve blade pitch or, if you have non-symmetrical blades, then set it to the blade pitch 
 that produces zero thrust. In Copter 3.6 and ealier, the minimum collective pitch that the autopilot 
-could commande was done with the parameter H_LAND_COL_MIN. 
-Set H_SV_MAN to 3 to have the swashplate move to the mid position.  Adjust H_COL_MID until the blade
+could commande was done with the parameter :ref:H_COL_LAND_MIN (AP_MotorsHeli_Single)<H_COL_LAND_MIN (AP_MotorsHeli_Single)>. 
+Set :ref:H_SV_MAN (AP_MotorsHeli_Single)<H_SV_MAN (AP_MotorsHeli_Single)> to 3 to have the swashplate move to the mid position.  Adjust :ref:H_COL_MID (AP_MotorsHeli_Single)<H_COL_MID (AP_MotorsHeli_Single)> until the blade
 pitch angle measures the desired collective blade pitch that corresponds to zero thrust.  
 
 
 
 Setting H_CYC_MAX
-================
+=================
 
-The parameter H_CYC_MAX sets the maximum cyclic blade pitch.  Checking the maximum cyclic blade pitch
+The parameter :ref:H_CYC_MAX (AP_MotorsHeli_Single)<H_CYC_MAX (AP_MotorsHeli_Single)> sets the maximum cyclic blade pitch.  Checking the maximum cyclic blade pitch
 requires positioning the blades 90 deg to the axis that is being measured.  Therefore if the longitudinal
 maximum blade cyclic pitch is being measured then rotate the blades until they are perpendicular to the
 fuselage of the aircraft (sticking out the left and right side).  Measure the blade pitch with the elevator 
 and aileron stick centered and then deflect the elevator stick full forward or aft and measure the blade pitch.  The
 difference between the two measurements would be the maximum cyclic blade pitch corresponding to the 
-H_CYC_MAX.  The cyclic blade pitch is the same for the pitch (elevator) and roll (aileron) axes.
+:ref:H_CYC_MAX (AP_MotorsHeli_Single)<H_CYC_MAX (AP_MotorsHeli_Single)>.  The cyclic blade pitch is the same for the pitch (elevator) and roll (aileron) axes.
