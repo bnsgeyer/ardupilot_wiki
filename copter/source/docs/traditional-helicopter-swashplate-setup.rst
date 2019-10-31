@@ -62,7 +62,7 @@ need to be moved to one of the aux servo outputs (9-16).
 - H4-45
 .. image:: ../images/TradHeli_Swashplate_H4-45.png
     :target: ../_images/TradHeli_Swashplate_H4-45.png
- 
+
 Other swashplates types that can be supported
 
 - H3R-140 - Use H3-140. May require :ref:H_COL_CTRL_DIR (AP_MotorsHeli_Single)<H_COL_CTRL_DIR (AP_MotorsHeli_Single)> to be reversed.
@@ -82,7 +82,7 @@ Push forward on the elevator stick and swashplate tilts forward; pull back on th
 stick and swashplate tilts aft.  Push right on the aileron stick and the swashplate tilts 
 right; Push left on the aileron stick and the swashplate tilts left.  Push up on the throttle 
 stick (collective) and the swashplate will rise; pull down on the throttle stick (collective) 
-and the swashplate will lower. Set the SERVO1_REVERSED, SERVO2_REVERSED, SERVO3_REVERSED, and 
+and the swashplate will lower. Set the :ref:SERVO1_REVERSED (SRV_Channel)<SERVO1_REVERSED (SRV_Channel)>, :ref:SERVO2_REVERSED (SRV_Channel)<SERVO2_REVERSED (SRV_Channel)>, :ref:SERVO3_REVERSED (SRV_Channel)<SERVO3_REVERSED (SRV_Channel)>, and 
 :ref:H_COL_CTRL_DIR (AP_MotorsHeli_Single)<H_COL_CTRL_DIR (AP_MotorsHeli_Single)> parameters so that your swashplate responds correctly (as described above) to 
 your collective and cyclic inputs.
 
@@ -98,12 +98,13 @@ methods below so the nail touches the top of each swashplate arm.
 .. image:: ../images/TradHeli_swash_leveling.png
     :target: ../_images/TradHeli_swash_leveling.png
 
+
 **Leveling swashplate without using linear servo**
 
 If you aren’t using the linearize servo feature, then you will use the servo trim parameters 
 to level your swashplate. Set the :ref:H_SV_MAN (AP_MotorsHeli_Single)<H_SV_MAN (AP_MotorsHeli_Single)> parameter to 1.  Adjust the transmitter throttle 
-stick (collective) until the servos are nearly perpendicular to the shaft.  Adjust SERVO1_TRIM, 
-SERVO2_TRIM, and SERVO3_TRIM until the swashplate is level.
+stick (collective) until the servos are nearly perpendicular to the shaft.  Adjust :ref:SERVO1_TRIM (SRV_Channel)<SERVO1_TRIM (SRV_Channel)>, 
+:ref:SERVO2_TRIM (SRV_Channel)<SERVO2_TRIM (SRV_Channel)>, and :ref:SERVO3_TRIM (SRV_Channel)<SERVO3_TRIM (SRV_Channel)> until the swashplate is level.
 
 **Leveling swashplate using linear servo**
 
