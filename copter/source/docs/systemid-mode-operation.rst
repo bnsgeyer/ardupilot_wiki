@@ -114,6 +114,22 @@ The next figure depicts the :ref:`SID_AXIS<SID_AXIS>` injection points in yellow
 
 ArduCopter control loops with ATC_RATE_FF_ENAB=1
 
+Position control diagram showing input and output for tracking bandwidth
+
+.. figure:: ../images/Pos_Ctrl_Pos_BW.png
+
+Position control diagram showing input and output for velocity bandwidth
+
+.. figure:: ../images/Pos_Ctrl_Vel_BW.png
+
+Position control diagram showing input and output for position disturbance rejection bandwidth
+
+.. figure:: ../images/Pos_Ctrl_Pos_DRB.png
+
+Position control diagram showing input and output for velocity disturbance rejection bandwidth
+
+.. figure:: ../images/Pos_Ctrl_Vel_DRB.png
+
 Identification of a Multicopter
 ===============================
 
