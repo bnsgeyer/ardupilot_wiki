@@ -612,10 +612,10 @@ Other functions are:
     Autotune_test_gains                   After autotune,allows selecting tune(high) or pretune gains
     VTOL QuickTune                        Autotunes QuadPlane VTOL PIDs, see :ref:`quicktune`
     AHRS AutoTrim                         Auto Trim for Copter, see :ref:`autotrim`
-    System ID                            |Enables the System Identification feature to be started and stopped with this switch.
-                                         |In quadplane VTOL, system ID feature is allowed to run on top of either qstabilize, qhover,
-                                         |or qloiter flight modes.  In quadplane fixed-wing and plane, system ID is albe to run on 
-                                         |top of either Guided, FBWA, Circle, Cruise, Loiter, or Auto flight modes. 
+    System ID                            | Enables the System Identification feature to be started and stopped with this switch.
+                                         | In quadplane VTOL, system ID feature is allowed to run on top of either qstabilize, qhover,
+                                         | or qloiter flight modes.  In quadplane fixed-wing and plane, system ID is albe to run on 
+                                         | top of either Guided, FBWA, Circle, Cruise, Loiter, or Auto flight modes. 
     Mount RP Lock                        | In RC targeting mode, if gimbal is capable and ANGLE RC targeting is
                                          | used instead of RATE, the roll and or pitch axes
                                          | which normally are assumed to stabilize in earth frame at the target
