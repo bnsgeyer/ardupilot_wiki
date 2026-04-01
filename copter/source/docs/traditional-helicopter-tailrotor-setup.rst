@@ -28,9 +28,9 @@ Servo with External Gyro :ref:`H_TAIL_TYPE <H_TAIL_TYPE>` = 1
 
 Instead of ArduPilot controlling both the desired yaw rate and stability, this option relies on an external gyro for stabilization. A servo is still used to input yaw rate demands to the tail and its setup as above, for the Servo Only case.
 
-The external gyro gain can be set by the :ref:`H_GYR_GAIN<H_GYR_GAIN>` parameter using the autopilot's "Motor7" output function,``SERVOx_FUNCTION``.
+The external gyro gain can be set by the ``H_GYR_GAIN`` parameter using the autopilot's "Motor7" output function,``SERVOx_FUNCTION``.
 
-In ACRO mode, this gain can be changed to the value of the :ref:`H_GYR_GAIN_ACRO<H_GYR_GAIN_ACRO>` parameter, if non-zero.
+In ACRO mode, this gain can be changed to the value of the ``H_GYR_GAIN_ACRO`` parameter, if non-zero.
 
 Direct Drive Variable Pitch :ref:`H_TAIL_TYPE <H_TAIL_TYPE>` = 2
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
