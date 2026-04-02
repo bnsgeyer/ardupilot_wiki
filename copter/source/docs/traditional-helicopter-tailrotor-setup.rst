@@ -23,8 +23,8 @@ The Servo Only tail type uses a servo connected to an autopilot output whose ``S
 
 Be sure to check the direction of operation of the Tail Servo. Move the rudder stick and notice the change in tail rotor pitch. Be sure that its increase or decrease of pitch is such that the change in thrust will result in the desired direction of movement. If not, reverse the servo direction with the ``SERVOx_REVERSED`` parameter.
 
-Servo with External Gyro :ref:`H_TAIL_TYPE <H_TAIL_TYPE>` = 1
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Servo with External Gyro :ref:`H_TAIL_TYPE <H_TAIL_TYPE>` = 1 (only available in versions prior to Copter 4.8.0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Instead of ArduPilot controlling both the desired yaw rate and stability, this option relies on an external gyro for stabilization. A servo is still used to input yaw rate demands to the tail and its setup as above, for the Servo Only case.
 

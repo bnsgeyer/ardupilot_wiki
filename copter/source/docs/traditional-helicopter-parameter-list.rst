@@ -44,6 +44,8 @@ These set up the configuration of the swashplate and collective travel.
 - :ref:`H_COL_MIN<H_COL_MIN>`
 - :ref:`H_SW_COL_DIR<H_SW_COL_DIR__AP_MotorsHeli_Single>`
 - :ref:`H_SW_LIN_SVO<H_SW_LIN_SVO__AP_MotorsHeli_Single>`
+- :ref:`H_SW_PHANG<H_SW_PHANG__AP_MotorsHeli_Single>` - This parameter is used to set the phase angle in degrees for all swashplate types. New in Ardupilot 4.8.
+
 
 Dual Rotor Helicopter
 =====================
@@ -60,11 +62,12 @@ If Dual Heli frame type is selected, these additional parameters for the second 
 - :ref:`H_SW2_TYPE<H_SW2_TYPE>`
 - :ref:`H_SW2_COL_DIR<H_SW2_COL_DIR>`
 - :ref:`H_SW2_LIN_SVO<H_SW2_LIN_SVO>`
+- :ref:`H_SW2_PHANG<H_SW2_PHANG>` - This parameter is used to set the phase angle in degrees for all swashplate types. New in Ardupilot 4.8.
 - :ref:`H_SW2_H3_ENABLE<H_SW2_H3_ENABLE>`
 - :ref:`H_SW2_H3_SV1_POS<H_SW2_H3_SV1_POS>`
 - :ref:`H_SW2_H3_SV2_POS<H_SW2_H3_SV2_POS>`
 - :ref:`H_SW2_H3_SV3_POS<H_SW2_H3_SV3_POS>`
-- ``H_SW2_H3_PHANG``
+- ``H_SW2_H3_PHANG`` This parameter was used in versions prior to Copter 4.8.0
 - :ref:`H_DCP_TRIM<H_DCP_TRIM>`
 - :ref:`H_YAW_REV_EXPO<H_YAW_REV_EXPO>`
 
@@ -76,14 +79,14 @@ ArduPilot allows custom swashplate servo placement for three servo swashplates. 
 - :ref:`H_SW_H3_SV1_POS<H_SW_H3_SV1_POS__AP_MotorsHeli_Single>`
 - :ref:`H_SW_H3_SV2_POS<H_SW_H3_SV2_POS__AP_MotorsHeli_Single>`
 - :ref:`H_SW_H3_SV3_POS<H_SW_H3_SV3_POS__AP_MotorsHeli_Single>`
-- ``H_SW_H3_PHANG``
+- ``H_SW_H3_PHANG`` This parameter was used in versions prior to Copter 4.8.0
 
  and if :ref:`H_SW2_TYPE<H_SW2_TYPE>` = 0 (dual helis only):
 
 - :ref:`H_SW2_H3_SV1_POS<H_SW_H3_SV1_POS__AP_MotorsHeli_Dual>`
 - :ref:`H_SW2_H3_SV2_POS<H_SW_H3_SV2_POS__AP_MotorsHeli_Dual>`
 - :ref:`H_SW2_H3_SV3_POS<H_SW_H3_SV3_POS__AP_MotorsHeli_Dual>`
-- ``H_SW2_H3_PHANG``
+- ``H_SW2_H3_PHANG`` This parameter was used in versions prior to Copter 4.8.0
 
 Rotor Speed Control Setup
 =========================
@@ -144,7 +147,7 @@ The type of tail rotor/control used is determined by these parameters.
 External Tail Gyro
 ==================
 
-Parameters are provided for external tail gyro, if used.
+Parameters are provided for external tail gyro, if used.  These parameters were used in versions prior to Copter 4.8.0.
 
 - ``H_GYR_GAIN``
 - ``H_GYR_GAIN_ACRO``

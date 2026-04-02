@@ -39,11 +39,13 @@ Parameter Settings:
 - :ref:`H_SW_TYPE<H_SW_TYPE__AP_MotorsHeli_Dual>` - Swashplate type for forward rotor head
 - :ref:`H_SW_COL_DIR<H_SW_COL_DIR__AP_MotorsHeli_Dual>` - Swashplate collective direction for forward rotor head
 - :ref:`H_SW_LIN_SVO<H_SW_LIN_SVO__AP_MotorsHeli_Dual>` - Enables linear servo feature for forward rotor head
+- :ref:`H_SW_PHANG<H_SW_PHANG__AP_MotorsHeli_Dual>` - This parameter is used to set the phase angle in degrees for all swashplate types. New in Copter 4.8.0.
 - :ref:`H_COL2_MIN<H_COL2_MIN>` - PWM for minimum collective pitch on aft rotor head that corresponds to :ref:`H_COL_ANG_MIN<H_COL_ANG_MIN>`
 - :ref:`H_COL2_MAX<H_COL2_MAX>`- PWM for maximum collective pitch on aft rotor head that corresponds to :ref:`H_COL_ANG_MAX<H_COL_ANG_MAX>`
 - :ref:`H_SW2_TYPE<H_SW2_TYPE>` - Swashplate type for aft rotor head
 - :ref:`H_SW2_COL_DIR<H_SW2_COL_DIR>` - Swashplate collective direction for aft rotor head
 - :ref:`H_SW2_LIN_SVO<H_SW2_LIN_SVO>` - Enables linear servo feature for aft rotor head
+- :ref:`H_SW2_PHANG<H_SW2_PHANG__AP_MotorsHeli_Dual>` - This parameter is used to set the phase angle in degrees for all swashplate types. New in Copter 4.8.0.
 - :ref:`H_DCP_TRIM<H_DCP_TRIM>` - Removes pitch I term bias due to center of gravity offsets or discrepancies between rotors in swashplate setup. If pitch axis has I term bias while hovering in calm winds, use value of bias in DCP_TRIM to re-center I term.
 
 These are only needed for the forward swashplate if :ref:`H_SW_TYPE<H_SW_TYPE__AP_MotorsHeli_Dual>` is set to H3 Generic.
@@ -52,7 +54,7 @@ These are only needed for the forward swashplate if :ref:`H_SW_TYPE<H_SW_TYPE__A
 - :ref:`H_SW_H3_SV1_POS<H_SW_H3_SV1_POS__AP_MotorsHeli_Dual>`
 - :ref:`H_SW_H3_SV2_POS<H_SW_H3_SV2_POS__AP_MotorsHeli_Dual>`
 - :ref:`H_SW_H3_SV3_POS<H_SW_H3_SV3_POS__AP_MotorsHeli_Dual>`
-- ``H_SW_H3_PHANG``
+- ``H_SW_H3_PHANG``This parameter was used in versions prior to Copter 4.8.0
 
 These are only needed for the aft swashplate if :ref:`H_SW2_TYPE<H_SW2_TYPE>` is set to H3 Generic.
 
@@ -60,7 +62,7 @@ These are only needed for the aft swashplate if :ref:`H_SW2_TYPE<H_SW2_TYPE>` is
 - :ref:`H_SW2_H3_SV1_POS<H_SW2_H3_SV1_POS>`
 - :ref:`H_SW2_H3_SV2_POS<H_SW2_H3_SV2_POS>`
 - :ref:`H_SW2_H3_SV3_POS<H_SW2_H3_SV3_POS>`
-- ``H_SW2_H3_PHANG``
+- ``H_SW2_H3_PHANG`` This parameter was used in versions prior to Copter 4.8.0
 
 This parameter is not used for the longitudinal configuration
 - :ref:`H_YAW_REV_EXPO<H_YAW_REV_EXPO>`
@@ -85,11 +87,13 @@ Parameter Settings:
 - :ref:`H_SW_TYPE<H_SW_TYPE__AP_MotorsHeli_Dual>` - Swashplate type for left rotor head
 - :ref:`H_SW_COL_DIR<H_SW_COL_DIR__AP_MotorsHeli_Dual>` - Swashplate collective direction for left rotor head
 - :ref:`H_SW_LIN_SVO<H_SW_LIN_SVO__AP_MotorsHeli_Dual>` - Enables linear servo feature for left rotor head
+- :ref:`H_SW_PHANG<H_SW_PHANG__AP_MotorsHeli_Dual>` - This parameter is used to set the phase angle in degrees for all swashplate types. New in Copter 4.8.0.
 - :ref:`H_COL2_MIN<H_COL2_MIN>` - PWM for minimum collective pitch on right rotor head that corresponds to :ref:`H_COL_ANG_MIN<H_COL_ANG_MIN>`
 - :ref:`H_COL2_MAX<H_COL2_MAX>`- PWM for maximum collective pitch on right rotor head that corresponds to :ref:`H_COL_ANG_MAX<H_COL_ANG_MAX>`
 - :ref:`H_SW2_TYPE<H_SW2_TYPE>` - Swashplate type for right rotor head
 - :ref:`H_SW2_COL_DIR<H_SW2_COL_DIR>` - Swashplate collective direction for right rotor head
 - :ref:`H_SW2_LIN_SVO<H_SW2_LIN_SVO>` - Enables linear servo feature for right rotor head
+- :ref:`H_SW2_PHANG<H_SW2_PHANG__AP_MotorsHeli_Dual>` - This parameter is used to set the phase angle in degrees for all swashplate types. New in Copter 4.8.0.
 - :ref:`H_DCP_TRIM<H_DCP_TRIM>` - Removes roll I term bias due to center of gravity offsets or discrepancies between rotors in swashplate setup. If roll axis has I term bias while hovering in calm winds, use value of bias in DCP_TRIM to re-center I term.
 
 These are only needed for the left swashplate if :ref:`H_SW_TYPE<H_SW_TYPE__AP_MotorsHeli_Dual>` is set to H3 Generic.
@@ -98,7 +102,7 @@ These are only needed for the left swashplate if :ref:`H_SW_TYPE<H_SW_TYPE__AP_M
 - :ref:`H_SW_H3_SV1_POS<H_SW_H3_SV1_POS__AP_MotorsHeli_Dual>`
 - :ref:`H_SW_H3_SV2_POS<H_SW_H3_SV2_POS__AP_MotorsHeli_Dual>`
 - :ref:`H_SW_H3_SV3_POS<H_SW_H3_SV3_POS__AP_MotorsHeli_Dual>`
-- ``H_SW_H3_PHANG``
+- ``H_SW_H3_PHANG`` This parameter was used in versions prior to Copter 4.8.0
 
 These are only needed for the right swashplate if :ref:`H_SW2_TYPE<H_SW2_TYPE>` is set to H3 Generic.
 
@@ -106,7 +110,7 @@ These are only needed for the right swashplate if :ref:`H_SW2_TYPE<H_SW2_TYPE>` 
 - :ref:`H_SW2_H3_SV1_POS<H_SW2_H3_SV1_POS>`
 - :ref:`H_SW2_H3_SV2_POS<H_SW2_H3_SV2_POS>`
 - :ref:`H_SW2_H3_SV3_POS<H_SW2_H3_SV3_POS>`
-- ``H_SW2_H3_PHANG``
+- ``H_SW2_H3_PHANG`` This parameter was used in versions prior to Copter 4.8.0
 
 This parameter is not used for the longitudinal configuration
 
@@ -130,11 +134,13 @@ Parameter Settings:
 - :ref:`H_SW_TYPE<H_SW_TYPE__AP_MotorsHeli_Dual>` - Swashplate type for left rotor head
 - :ref:`H_SW_COL_DIR<H_SW_COL_DIR__AP_MotorsHeli_Dual>` - Swashplate collective direction for left rotor head
 - :ref:`H_SW_LIN_SVO<H_SW_LIN_SVO__AP_MotorsHeli_Dual>` - Enables linear servo feature for left rotor head
+- :ref:`H_SW_PHANG<H_SW_PHANG__AP_MotorsHeli_Dual>` - This parameter is used to set the phase angle in degrees for all swashplate types. New in Copter 4.8.0.
 - :ref:`H_COL2_MIN<H_COL2_MIN>` - PWM for minimum collective pitch on right rotor head that corresponds to :ref:`H_COL_ANG_MIN<H_COL_ANG_MIN>`
 - :ref:`H_COL2_MAX<H_COL2_MAX>`- PWM for maximum collective pitch on right rotor head that corresponds to :ref:`H_COL_ANG_MAX<H_COL_ANG_MAX>`
 - :ref:`H_SW2_TYPE<H_SW2_TYPE>` - Swashplate type for right rotor head
 - :ref:`H_SW2_COL_DIR<H_SW2_COL_DIR>` - Swashplate collective direction for right rotor head
 - :ref:`H_SW2_LIN_SVO<H_SW2_LIN_SVO>` - Enables linear servo feature for right rotor head
+- :ref:`H_SW2_PHANG<H_SW2_PHANG__AP_MotorsHeli_Dual>` - This parameter is used to set the phase angle in degrees for all swashplate types. New in Copter 4.8.0.
 - :ref:`H_YAW_REV_EXPO<H_YAW_REV_EXPO>` - Yaw revereser smoothing exponent, smoothen transition near zero collective region. Increase this parameter to shink smoothing range. Set to -1 to disable reverser.
 
 These are only needed for the left swashplate if :ref:`H_SW_TYPE<H_SW_TYPE__AP_MotorsHeli_Dual>` is set to H3 Generic.
@@ -143,7 +149,7 @@ These are only needed for the left swashplate if :ref:`H_SW_TYPE<H_SW_TYPE__AP_M
 - :ref:`H_SW_H3_SV1_POS<H_SW_H3_SV1_POS__AP_MotorsHeli_Dual>`
 - :ref:`H_SW_H3_SV2_POS<H_SW_H3_SV2_POS__AP_MotorsHeli_Dual>`
 - :ref:`H_SW_H3_SV3_POS<H_SW_H3_SV3_POS__AP_MotorsHeli_Dual>`
-- ``H_SW_H3_PHANG``
+- ``H_SW_H3_PHANG`` This parameter was used in versions prior to Copter 4.8.0
 
 These are only needed for the right swashplate if :ref:`H_SW2_TYPE<H_SW2_TYPE>` is set to H3 Generic.
 
@@ -151,7 +157,7 @@ These are only needed for the right swashplate if :ref:`H_SW2_TYPE<H_SW2_TYPE>` 
 - :ref:`H_SW2_H3_SV1_POS<H_SW2_H3_SV1_POS>`
 - :ref:`H_SW2_H3_SV2_POS<H_SW2_H3_SV2_POS>`
 - :ref:`H_SW2_H3_SV3_POS<H_SW2_H3_SV3_POS>`
-- ``H_SW2_H3_PHANG``
+- ``H_SW2_H3_PHANG`` This parameter was used in versions prior to Copter 4.8.0
 
 These parameters are not used for the intermeshing configuration
 
@@ -176,11 +182,13 @@ Parameter Settings:
 - :ref:`H_SW_TYPE<H_SW_TYPE__AP_MotorsHeli_Dual>` - Swashplate type for counter clockwise rotor head
 - :ref:`H_SW_COL_DIR<H_SW_COL_DIR__AP_MotorsHeli_Dual>` - Swashplate collective direction for counter clockwise rotor head
 - :ref:`H_SW_LIN_SVO<H_SW_LIN_SVO__AP_MotorsHeli_Dual>` - Enables linear servo feature for counter clockwise rotor head
+- :ref:`H_SW_PHANG<H_SW_PHANG__AP_MotorsHeli_Dual>` - This parameter is used to set the phase angle in degrees for all swashplate types. New in Copter 4.8.0.
 - :ref:`H_COL2_MIN<H_COL2_MIN>` - PWM for minimum collective pitch on clockwise rotor head that corresponds to :ref:`H_COL_ANG_MIN<H_COL_ANG_MIN>`
 - :ref:`H_COL2_MAX<H_COL2_MAX>`- PWM for maximum collective pitch on clockwise rotor head that corresponds to :ref:`H_COL_ANG_MAX<H_COL_ANG_MAX>`
 - :ref:`H_SW2_TYPE<H_SW2_TYPE>` - Swashplate type for clockwise rotor head
 - :ref:`H_SW2_COL_DIR<H_SW2_COL_DIR>` - Swashplate collective direction for clockwise rotor head
 - :ref:`H_SW2_LIN_SVO<H_SW2_LIN_SVO>` - Enables linear servo feature for clockwise rotor head
+- :ref:`H_SW2_PHANG<H_SW2_PHANG__AP_MotorsHeli_Dual>` - This parameter is used to set the phase angle in degrees for all swashplate types. New in Copter 4.8.0.
 - :ref:`H_YAW_REV_EXPO<H_YAW_REV_EXPO>` - Yaw revereser smoothing exponent, smoothen transition near zero collective region. Increase this parameter to shink smoothing range. Set to -1 to disable reverser.
 
 
@@ -190,7 +198,7 @@ These are only needed for the counter clockwise swashplate if :ref:`H_SW_TYPE<H_
 - :ref:`H_SW_H3_SV1_POS<H_SW_H3_SV1_POS__AP_MotorsHeli_Dual>`
 - :ref:`H_SW_H3_SV2_POS<H_SW_H3_SV2_POS__AP_MotorsHeli_Dual>`
 - :ref:`H_SW_H3_SV3_POS<H_SW_H3_SV3_POS__AP_MotorsHeli_Dual>`
-- ``H_SW_H3_PHANG``
+- ``H_SW_H3_PHANG`` This parameter was used in versions prior to Copter 4.8.0
 
 These are only needed for the clockwise swashplate if :ref:`H_SW2_TYPE<H_SW2_TYPE>` is set to H3 Generic.
 
@@ -198,7 +206,7 @@ These are only needed for the clockwise swashplate if :ref:`H_SW2_TYPE<H_SW2_TYP
 - :ref:`H_SW2_H3_SV1_POS<H_SW2_H3_SV1_POS>`
 - :ref:`H_SW2_H3_SV2_POS<H_SW2_H3_SV2_POS>`
 - :ref:`H_SW2_H3_SV3_POS<H_SW2_H3_SV3_POS>`
-- ``H_SW2_H3_PHANG``
+- ``H_SW2_H3_PHANG`` This parameter was used in versions prior to Copter 4.8.0
 
 These parameters are not used for the coaxial configuration
 

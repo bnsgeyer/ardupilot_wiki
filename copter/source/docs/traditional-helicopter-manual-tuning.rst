@@ -127,7 +127,8 @@ The setup of a helicopter with flybar equipped head does not require the
 the ACRO flight mode.  Unless there is a reason passthrough provided by the flybar 
 setting in ACRO mode is needed, then it is recommended that ``H_FLYBAR_MODE`` is 
 left at its default of no flybar.  If you choose to use the flybar mode then the FF gain 
-is set as described below.  Otherwise the FF is tuned just like an flybarless head.
+is set as described below.  Otherwise the FF is tuned just like an flybarless head.  The 
+flybar mode feature was removed in Copter 4.8.0 and is no longer available.
 
 .. Note:: For flybar heads, the flybar is a mechanical version of the rate PID loop. So flybar is tuned using only FF in pitch and roll. The rate D and P gains are left set to zero for flybar. I-gain, IMAX, and ILMI are tuned just like FBL. 
 
