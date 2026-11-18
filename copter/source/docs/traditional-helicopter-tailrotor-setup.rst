@@ -100,18 +100,30 @@ Collective to tailrotor compensation is used to remove the effects of the aircra
 
 The parameter :ref:`H_COL2YAW<H_COL2YAW>` is used to set the compensation gain.  This implementation uses an accepted helicopter performance relationship between helicopter power required and weight.  Setting this parameter will only be valid for one rotor speed.  Set the tailrotor pitch so it is zero deg blade pitch at the ``SERVOx_TRIM`` value. If the rotor speed is changed then the parameter might require retuning.  The relationship uses collective to the 1.5 power to determine the tailrotor correction.  It is recommended to start at 0.5 and increase the parameter until there is little to no yawing when changing the collective pitch.  
 
-Another way would be to determine the yaw and collective required for hovering at two weights and then calculate the value.  The increase in weight between the typical hover weight and the increased weight should be at least 20%. It is recommended to ser the :ref:`H_COL2YAW<H_COL2YAW>` parameter to zero for this test.  
+Another way would be to determine the yaw and collective required for hovering at two weights and then calculate the value.  The increase in weight between the typical hover weight and the increased weight should be at least 20%. It is recommended to set the :ref:`H_COL2YAW<H_COL2YAW>` parameter to zero for this test.  
 
 Here is an example for calculating :ref:`H_COL2YAW<H_COL2YAW>`.  This was done for a 700 size helicopter.  Two hovers were performed, one at 12 lbs and the other at 16 lbs (33% increase in weight).  The actual weight is not necessary but is provided for reference. Here is the data for :ref:`H_COL2YAW<H_COL2YAW>` set to zero
-weight       CTUN.ThO      RCOU.CH4     Calc Yaw based on servo min, max and trim
-12 lb               0.57                1590                    0.181
-16 lb               0.65                1602                    0.204
+
+--------------------------------------------------------------------
+|weight   |    CTUN.ThO  |    RCOU.CH4   |  Calc Yaw based on      |
+|         |              |               | servo min, max and trim |
+--------------------------------------------------------------------
+|12 lb    |      0.57    |      1590     |        0.181            |
+--------------------------------------------------------------------
+|16 lb    |     0.65     |      1602     |        0.204            |
+--------------------------------------------------------------------
 the  zero thrust collective was 0.182. The RATE.Yout could be used for the yaw since col2yaw is zero.
+
 col2yaw = (yaw16 - yaw12)/ ((col16-col0)^3/2 - (col12-col0)^3/2)
+
 where yaw12 and yaw16 is calculated yaw at 12 and 16 lbs and col12 and col16 are collective at 12 and 16 lbs.  col0 is zero thrust collective.
+
 col2yaw = (0.204 - 0.181) / ((0.65-0.182)^3/2 - (0.57-0.182)^3/2 ) = 0.295
 
-Trim yaw is calculated by yaw12 = yaw_trim + col2yaw * (coll12-col0)^3/2
+Trim yaw is calculated by 
+
+yaw12 = yaw_trim + col2yaw * (coll12-col0)^3/2
+
 yaw_trim = 0.181 - 0.295 * (0.57 - 0.182) ^3/2 = 0.11
 
 you can either set your yaw trim mechanically so as to keep even yaw throw to the left and right or set the SERVO4_TRIM parameter which in this case was 1550.
