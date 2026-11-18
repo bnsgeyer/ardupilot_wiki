@@ -104,14 +104,14 @@ Another way would be to determine the yaw and collective required for hovering a
 
 Here is an example for calculating :ref:`H_COL2YAW<H_COL2YAW>`.  This was done for a 700 size helicopter.  Two hovers were performed, one at 12 lbs and the other at 16 lbs (33% increase in weight).  The actual weight is not necessary but is provided for reference. Here is the data for :ref:`H_COL2YAW<H_COL2YAW>` set to zero
 
---------------------------------------------------------------------
++---------+--------------+---------------+-------------------------+
 |weight   |    CTUN.ThO  |    RCOU.CH4   |  Calc Yaw based on      |
 |         |              |               | servo min, max and trim |
---------------------------------------------------------------------
++---------+--------------+---------------+-------------------------+
 |12 lb    |      0.57    |      1590     |        0.181            |
---------------------------------------------------------------------
++---------+--------------+---------------+-------------------------+
 |16 lb    |     0.65     |      1602     |        0.204            |
---------------------------------------------------------------------
++---------+--------------+---------------+-------------------------+
 the  zero thrust collective was 0.182. The RATE.Yout could be used for the yaw since col2yaw is zero.
 
 col2yaw = (yaw16 - yaw12)/ ((col16-col0)^3/2 - (col12-col0)^3/2)
